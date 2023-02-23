@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="stylesheet" type="text/css" href="index.css">
+    <title>Noveriko's Website</title>
+</head>
+<body>
+    <header>
+        <img src="c-logo.png" alt="company logo" width="50" height="50"><span id="web-name">Noveriko's Website</span>
+        <ul>
+            <li><a class="active" href="index.html">Home</a></li>
+            <li><a href="profile.html">Our Profile</a></li>
+            <li><a href="message.html">Message Us</a></li>
+        </ul>
+    </header>
+
+    <section id="banner">
+    
+    <!-- DONE -->
+    <div class="welcome"> 
+            <h1 class="welcome-msg">Hi <span id="user-name"></span>!, Welcome to Homepage</h1>
+            <p  class="welcom-sub">This is the first Exercise's Website</p>
+    </div>
+    
+    <!-- DONE -->
+    <div class="slides">
+        <img class="img-slide" src="https://source.unsplash.com/random/900x700/?fruit&sig=1" style="width:100%" alt="Banner 1">
+        <img class="img-slide" src="https://source.unsplash.com/random/900x700/?fruit&sig=2" style="width:100%" alt="Banner 2">
+        <img class="img-slide" src="https://source.unsplash.com/random/900x700/?fruit&sig=3" style="width:100%" alt="Banner 3">
+        <br>
+        <button onclick="plusDivs(-1)">Previous</button>
+        <button onclick="plusDivs(1)">Next</button>
+    </div>
+    </section>
+
+    <h1 id="location">We are located in</h1>
+    <section id="cities">
+        <div class="city">
+            <h2>Jakarta</h2>
+            <img class="city-img" src="jakarta.jpg" alt="Monas">
+        </div>
+        <div class="city">
+            <h2>Bandung</h2>
+            <img class="city-img" src="bandung.jpg" alt="Gedung Sate">
+        </div>
+        <div class="city">
+            <h2>Surabaya</h2>
+            <img class="city-img" src="surabaya.jpg" alt="Pakuwon Mall">
+        </div>
+    </section>
+    <br>
+
+    <script src="script.js"></script>
+
+</body>
+
+<footer>
+    <p id="copyright">Created by Noveriko, 2023</p>
+</footer>
+</html>

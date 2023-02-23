@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="stylesheet" type="text/css" href="message.css">
+    <title>Noveriko's Website</title>
+</head>
+<body>
+    <header>
+        <img src="c-logo.png" alt="company logo" width="50" height="50"><span id="web-name">Noveriko's Website</span>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="profile.html">Our Profile</a></li>
+            <li><a class="active" href="message.html">Message Us</a></li>
+        </ul>
+    </header>
+
+        <h1>Give Us Your Feedback</h1>
+        <p>Message Us Here!</p>
+        <div class="form-part">
+            <form id="message-form" name="message-form" onsubmit="return validateForm()">
+                <label for="name">Name :</label>
+                <input type="text" id="name" name="name" placeholder="Your name">
+                <label for="birthdate">Birth Date :</label>
+                <input type="date" id="birthdate" name="birthdate">
+                <label for="sex">Sex :</label>
+                <select id="sex" name="sex">
+                  <option value="">Choose your sex</option>
+                  <option value="male">Male</option>
+                  <option value="female">Female</option>
+                </select>
+                <label for="message">Message :</label>
+                <textarea id="message" name="message" rows="4" placeholder="Your message"></textarea>
+                <button type="submit" onclick="return validateForm()">Submit</button>
+            </form>
+        </div>
+
+        <table id="userTable">
+            <thead>
+                <tr>
+                    <th>Name</th>
+                    <th>Birth Date</th>
+                    <th>Sex</th>
+                    <th>Message</th>
+                </tr>
+            </thead>
+            <tbody>
+            </tbody>
+        </table>
+
+        <div class="error" id="nameError"></div>
+        <div class="error" id="birthdateError"></div>
+        <div class="error" id="sexError"></div>
+        <div class="error" id="messageError"></div>
+
+    <script src="formscript.js"></script>
+</body>
+
+<footer>
+    <p id="copyright">Created by Noveriko, 2023</p>
+</footer>
+</html>
